@@ -1,0 +1,383 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-im* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;   
+    }
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    body{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+    /* Wrapper */
+    .wrapper {
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+    .player-0-panel,
+    .player-1-panel {
+        width: 50%;
+        float: left;
+        height: 600px;
+        padding: 100px;
+    }
+    
+
+    
+    .Player1{
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .Player2{
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    
+    
+    .player-score {
+        text-align: center;
+        font-size: 80px;
+        font-weight: 100;
+        color: #cd5ccd;
+        margin-bottom: 130px;
+    }
+    
+    .active { 
+        background-color: #ccc; 
+    }
+    .active .player-name { font-weight: 300; }
+    
+    .active .player-name::after {
+        content: "\2022";
+        font-size: 47px;
+        position: absolute;
+        color: #008000;
+        top: -7px;
+        right: 10px;
+        
+    }
+    
+    .player-current-box {
+        background-color: #cd5ccd;
+        color: #fff;
+        width: 40%;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        border-radius: 7px;
+    
+    }
+    
+    .player-current-label {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #222;
+    }
+    
+    .player-current-score {
+        font-size: 30px;
+    }
+    
+    
+    button {
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #555;
+        background: none;
+        border: none;
+        font-family: Lato;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 300;
+     
+    }
+    .btn-new{
+        color: #008000;
+        font-weight: bold;
+    }
+    button:hover { font-weight: 600; }
+    button:hover i { margin-right: 20px; }
+    
+    button:focus {
+        outline: none;
+    }
+    i {
+        color: #008000;
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 32px;
+        line-height: 1;
+        vertical-align: text-top;
+        margin-top: -4px;
+        transition: margin 0.3s;
+    }
+    
+    
+    .btn-new { top: 45px;
+       font-weight: bold; 
+    }
+    .btn-roll { top: 403px;
+    }
+    .btn-hold { top: 467px;
+    }
+    
+    
+    .dice {
+        position: absolute;
+        left: 50%;
+        top: 178px;
+        transform: translateX(-50%);
+        height: 100px;
+        box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    }
+    
+    #dice1 { top: 120px; }
+    #dice2 { top: 250px; }
+    
+    /* Winner status */ 
+    .winner { background-color: #ccc;  }
+    .winner .player-name { font-weight: 300; color: #d870d8; }
+    
+    /* Winning score input */
+    #winningScore {
+        position: absolute;
+        top: 520px;
+        left: 50%;
+        text-transform: uppercase; 
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Lato';
+        text-align: center;
+        padding: 8px;
+        width: 188px;
+        transform: translateX(-50%);
+    }
+    
+    #winningScore:focus { outline: none; }age: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Panels */
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+/***********/
+/* PLAYERS */
+/***********/
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #cd5ccd;
+    margin-bottom: 130px;
+}
+
+.active { 
+    background-color: #ccc; 
+}
+.active .player-name { font-weight: 300; }
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #008000;
+    top: -7px;
+    right: 10px;
+    
+}
+
+.player-current-box {
+    background-color: #cd5ccd;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+/* Buttons */
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-new{
+    color: #008000;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+body{
+    background-color: #000000;
+}
+
+/* Icons */
+i {
+    color: #008000;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+/* Specific buttons */
+.btn-new { top: 45px;}
+.btn-roll { top: 403px;}
+.btn-hold { top: 467px;}
+
+/* Dice images */
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#dice1 { top: 120px; }
+#dice2 { top: 250px; }
+
+/* Winner status */ 
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #d870d8; }
+
+/* Winning score input */
+#winningScore {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    text-transform: uppercase; 
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 8px;
+    width: 230px;
+    transform: translateX(-50%);
+    border: 5px solid #d870d8;
+}
+
+#winningScore:focus { outline: none; }
+.video{
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
